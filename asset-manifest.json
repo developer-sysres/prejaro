@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/prejaro/static/css/main.81ab2939.css",
+    "main.js": "/prejaro/static/js/main.571bf1a3.js",
+    "index.html": "/prejaro/index.html",
+    "main.81ab2939.css.map": "/prejaro/static/css/main.81ab2939.css.map",
+    "main.571bf1a3.js.map": "/prejaro/static/js/main.571bf1a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ab2939.css",
+    "static/js/main.571bf1a3.js"
+  ]
+}
