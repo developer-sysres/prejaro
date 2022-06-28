@@ -236,34 +236,34 @@ function RegistrationForm() {
                 </div>
                 <div className="postalcode">
                     <label className="form__label" for="postalcode">PostalCode </label>
-                    <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handlePostalChange(e)} placeholder=""/>
+                    <input  type="text" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handlePostalChange(e)} placeholder=""/>
                 </div> 
 
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">property_value_th </label>
-                    <input  type="test" id="postalcode" className="form__input" value={property_value_th} required onChange = {(e) => handleproperty_value_th(e)} placeholder=""/>
+                <div className="property_value_th">
+                    <label className="form__label" for="property_value_th">property_value_th </label>
+                    <input  type="text" id="property_value_th" className="form__input" value={property_value_th} required onChange = {(e) => handleproperty_value_th(e)} placeholder=""/>
                 </div> 
 
 
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">loan_secured_th </label>
-                    <input  type="test" id="postalcode" className="form__input" value={loan_secured_th} required onChange = {(e) => handloan_secured_th(e)} placeholder=""/>
+                <div className="loan_secured_th">
+                    <label className="form__label" for="loan_secured_th">loan_secured_th </label>
+                    <input  type="text" id="loan_secured_th" className="form__input" value={loan_secured_th} required onChange = {(e) => handloan_secured_th(e)} placeholder=""/>
                 </div> 
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">age_youngest </label>
-                    <input  type="test" id="postalcode" className="form__input" value={age_youngest} required onChange = {(e) => handleage_youngest(e)} placeholder=""/>
+                <div className="age_youngest">
+                    <label className="form__label" for="age_youngest">age_youngest </label>
+                    <input  type="text" id="age_youngest" className="form__input" value={age_youngest} required onChange = {(e) => handleage_youngest(e)} placeholder=""/>
                 </div>
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">triggerCall </label>
-                    <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handletriggerCall(e)} placeholder=""/>
+                <div className="triggerCall">
+                    <label className="form__label" for="triggerCall">triggerCall </label>
+                    <input  type="text" id="triggerCall" className="form__input" value={triggerCall} required onChange = {(e) => handletriggerCall(e)} placeholder=""/>
                 </div>
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">gdpr_action </label>
-                    <input  type="test" id="postalcode" className="form__input" value={gdpr_action} required onChange = {(e) => handlegdpr_action(e)} placeholder=""/>
+                <div className="gdpr_action">
+                    <label className="form__label" for="gdpr_action">gdpr_action </label>
+                    <input  type="text" id="gdpr_action" className="form__input" value={gdpr_action} required onChange = {(e) => handlegdpr_action(e)} placeholder=""/>
                 </div>
-                <div className="postalcode">
-                    <label className="form__label" for="postalcode">notes </label>
-                    <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handlenotes(e)} placeholder=""/>
+                <div className="notes">
+                    <label className="form__label" for="notes">notes </label>
+                    <input  type="text" id="notes" className="form__input" value={notes} required onChange = {(e) => handlenotes(e)} placeholder=""/>
                 </div>
                 {/* <div className="password">
                     <label className="form__label" for="password">Password </label>
