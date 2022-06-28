@@ -31,6 +31,12 @@ function RegistrationForm() {
     const [tel_day , setTelephone] = useState('');
     const [postcode , setPostal] = useState('');
 
+    const [property_value_th , setproperty_value_th] = useState('');
+    const [loan_secured_th , setloan_secured_th] = useState('');
+    const [age_youngest , setage_youngest] = useState('');
+    const [triggerCall , settriggerCall] = useState('');
+    const [gdpr_action , setgdpr_action] = useState('');
+    const [notes , setnotes] = useState('');
     // function to update state of name with
     // value enter by user in form
     const handleNameChange =(e)=>{
@@ -75,6 +81,28 @@ function RegistrationForm() {
       }
   
 
+
+      const handleproperty_value_th =(e)=>{
+        setproperty_value_th(e.target.value);
+      }
+  
+      const handloan_secured_th =(e)=>{
+        setloan_secured_th(e.target.value);
+      }
+  
+      const handleage_youngest =(e)=>{
+        setage_youngest(e.target.value);
+      }
+  
+      const handletriggerCall =(e)=>{
+        settriggerCall(e.target.value);
+      }
+      const handlegdpr_action =(e)=>{
+        setgdpr_action(e.target.value);
+      }
+      const handlenotes =(e)=>{
+        setnotes(e.target.value);
+      }
     // const handleInputChange = (e) => {
     //     const {id , value} = e.target;
     //     // if(id === "firstName"){
@@ -139,7 +167,12 @@ function RegistrationForm() {
           // body: JSON.stringify({title:'Mr',surname:'Prem',email:'prem@bar.com',tel_day:'01234 567890'
           // ,address1:'Test',postcode:'LS15 8GB'})};
           body: JSON.stringify({title:title,surname:surname,email:email,tel_day:tel_day
-          ,address1:address1,address2:address2, town:town,postcode:postcode})};
+          ,address1:address1,address2:address2, town:town,postcode:postcode
+         ,property_value_th:property_value_th, loan_secured_th:loan_secured_th,
+         age_youngest:age_youngest ,triggerCall:triggerCall , gdpr_action:gdpr_action,
+         notes:notes
+
+        })};
     
           const response =    fetch('https://data.agepartnership.co.uk/rest/eqr/customer/', requestOptions)
           .then(response => response.json())
@@ -205,6 +238,33 @@ function RegistrationForm() {
                     <label className="form__label" for="postalcode">PostalCode </label>
                     <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handlePostalChange(e)} placeholder=""/>
                 </div> 
+
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">property_value_th </label>
+                    <input  type="test" id="postalcode" className="form__input" value={property_value_th} required onChange = {(e) => handleproperty_value_th(e)} placeholder=""/>
+                </div> 
+
+
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">loan_secured_th </label>
+                    <input  type="test" id="postalcode" className="form__input" value={loan_secured_th} required onChange = {(e) => handloan_secured_th(e)} placeholder=""/>
+                </div> 
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">age_youngest </label>
+                    <input  type="test" id="postalcode" className="form__input" value={age_youngest} required onChange = {(e) => handleage_youngest(e)} placeholder=""/>
+                </div>
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">triggerCall </label>
+                    <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handletriggerCall(e)} placeholder=""/>
+                </div>
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">gdpr_action </label>
+                    <input  type="test" id="postalcode" className="form__input" value={gdpr_action} required onChange = {(e) => handlegdpr_action(e)} placeholder=""/>
+                </div>
+                <div className="postalcode">
+                    <label className="form__label" for="postalcode">notes </label>
+                    <input  type="test" id="postalcode" className="form__input" value={postcode} required onChange = {(e) => handlenotes(e)} placeholder=""/>
+                </div>
                 {/* <div className="password">
                     <label className="form__label" for="password">Password </label>
                     <input className="form__input" type="password"  id="password" value={password} onChange = {(e) => handleInputChange(e)} placeholder="Password"/>
