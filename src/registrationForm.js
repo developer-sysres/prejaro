@@ -179,7 +179,7 @@ function RegistrationForm() {
         //  //.then((data) => {  console.log('Success:', data)
         //  .then((data) => {  alert('A form was submitted successfully. The transaction id is - ' + data.transaction_id)
           
-         const response =    fetch('/rest/eqr/customer/', requestOptions,{baseURL:'https://cors-anywhere.herokuapp.com/https://data.agepartnership.co.uk'},{mode:'cors'})
+         const response =    fetch('/rest/eqr/customer/', requestOptions,{baseURL:'https://data.agepartnership.co.uk'},{mode:'cors'})
          .then(response => response.json())
         //.then((data) => {  console.log('Success:', data)
         .then((data) => {  alert('A form was submitted successfully. The transaction id is - ' + data.transaction_id)
