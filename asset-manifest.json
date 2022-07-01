@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/prejaro/static/css/main.08fb5fa6.css",
-    "main.js": "/prejaro/static/js/main.9a6d73fa.js",
+    "main.js": "/prejaro/static/js/main.dc3b23a8.js",
     "index.html": "/prejaro/index.html",
     "main.08fb5fa6.css.map": "/prejaro/static/css/main.08fb5fa6.css.map",
-    "main.9a6d73fa.js.map": "/prejaro/static/js/main.9a6d73fa.js.map"
+    "main.dc3b23a8.js.map": "/prejaro/static/js/main.dc3b23a8.js.map"
   },
   "entrypoints": [
     "static/css/main.08fb5fa6.css",
-    "static/js/main.9a6d73fa.js"
+    "static/js/main.dc3b23a8.js"
   ]
 }
