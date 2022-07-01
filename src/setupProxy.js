@@ -1,12 +1,12 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const proxy = {
-    target: '/rest/eqr/customer/',
+    target: 'https://data.agepartnership.co.uk',
     changeOrigin: true
 }
 module.exports = function(app) {
   app.use(
-    'https://data.agepartnership.co.uk',
+    '/rest/eqr/customer/',
     createProxyMiddleware(proxy)
   );
 };
