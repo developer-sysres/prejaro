@@ -154,8 +154,8 @@ function RegistrationForm() {
           mode: "cors",
           credentials: 'include', 
           headers: { 
-            //'Access-Control-Allow-Origin':'http://localhost:3000,https://hive.maxcontact.com,https://developer-sysres.github.io/,*',
-            'Access-Control-Allow-Origin':'*',
+            'Access-Control-Allow-Origin':'http://localhost:3000,https://hive.maxcontact.com,https://developer-sysres.github.io/,*',
+            //'Access-Control-Allow-Origin':'*',
             'Access-Control-Allow-Credentials': 'true',
             'Content-Type': 'application/json',
             "Accept" : "application/json",
