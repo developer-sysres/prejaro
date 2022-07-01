@@ -154,8 +154,8 @@ function RegistrationForm() {
           mode: "cors",
           credentials: 'include', 
           headers: { 
-            'Access-Control-Allow-Origin':'http://localhost:3000,https://hive.maxcontact.com,https://developer-sysres.github.io/,*',
-            //'Access-Control-Allow-Origin':'*',
+            //'Access-Control-Allow-Origin':'http://localhost:3000,https://hive.maxcontact.com,https://developer-sysres.github.io/,*',
+            'Access-Control-Allow-Origin':'*',
             'Access-Control-Allow-Credentials': 'true',
             'Content-Type': 'application/json',
             "Accept" : "application/json",
@@ -179,7 +179,7 @@ function RegistrationForm() {
         //  //.then((data) => {  console.log('Success:', data)
         //  .then((data) => {  alert('A form was submitted successfully. The transaction id is - ' + data.transaction_id)
           
-         const response =    fetch('/rest/eqr/customer/', requestOptions,{baseURL:'https://data.agepartnership.co.uk'},{mode:'cors'})
+         const response =    fetch('/rest/eqr/customer/', requestOptions,{baseURL:'https://data.agepartnership.co.uk'})
          .then(response => response.json())
         //.then((data) => {  console.log('Success:', data)
         .then((data) => {  alert('A form was submitted successfully. The transaction id is - ' + data.transaction_id)
